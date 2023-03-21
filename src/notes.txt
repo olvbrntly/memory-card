@@ -1,0 +1,29 @@
+12 characters for easy mode 
+24 character for hard mode 
+
+FIRST 12
+1.Michael   
+2.Jim
+3.Pam
+4.Dwight
+5.Angela
+6.Oscar
+7.Kevin
+8.Phyllis
+9.Stanley
+10.Creed
+11.Meredith
+12.Ryan
+
+13. Kelly
+14. Darryl
+15. Jan
+16. Andy
+17. Erin
+18. Toby
+19. Mose
+20. David Wallace
+21. Roy
+22. Gabe
+23. Clark
+24. Pete
