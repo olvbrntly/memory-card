@@ -1,0 +1,28 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px 0 50px;
+}
+
+/* ---------- PHOTO-CARD ---------- */
+
+.photo-card{
+    width:225px;
+    height:300px;
+    padding-top:10px;
+    background-color:#536fa7f6;
+    border-radius: 10px;
+}
+
+.character-img{
+    width:175px;
+    height: 238px;
+    border-radius: 10px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:20px;
+}

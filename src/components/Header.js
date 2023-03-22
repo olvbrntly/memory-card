@@ -1,6 +1,6 @@
 import React from "react";
 import Modes from './Modes';
-import './Header.css'
+import './components.css'
 
 function Header(){
     return(

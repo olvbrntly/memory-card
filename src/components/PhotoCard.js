@@ -1,8 +1,14 @@
 import React from "react";
 
-function PhotoCard(){
+
+function PhotoCard({name, url}){
     return(
-        <div></div>
+        <div>
+            <div className="photo-card">
+                <img className="character-img" src={url} alt={name}/>
+                <p>{name}</p>
+            </div>
+        </div>
     )
 }
 
