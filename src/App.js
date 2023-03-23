@@ -88,7 +88,7 @@ function App() {
   //const initialClickedCharacters = []
   const [characters, setCharacters] = useState(initialCharacters);
   const [clickedCharacters, setClickedCharacters] = useState([]);
-  const [currentId, setCurrentId, Idref] = useState('');
+  const [currentId, setCurrentId, Idref] = useState();
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] =useState(0);
   const [gameOver, setGameOver] = useState(false)
@@ -98,13 +98,12 @@ function App() {
     setGameOver(false) 
     setCurrentId(id);
     addClickedCharacter(Idref.current);
-    shuffle(characters)
   }
 
   function addClickedCharacter(id){
-    if(clickedCharacters.length < 1){
+    if(clickedCharacters === []){
       setClickedCharacters(prev => [...prev, id])
-      setScore(1)
+      
     }
     else if(!(clickedCharacters).includes(id)){
       setClickedCharacters(prev => [...prev, id])
@@ -136,6 +135,11 @@ function App() {
       }
       return array;
     }
+
+  useEffect(()=>{
+    shuffle(characters)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[currentId,gameOver])
   
   return (
     <div className="App">
