@@ -5,6 +5,12 @@
     margin: 0 100px 0 50px;
 }
 
+.header-left{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
 /* ---------- PHOTO-CARD ---------- */
 
 .photo-card{

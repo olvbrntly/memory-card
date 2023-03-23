@@ -85,43 +85,68 @@ function App() {
     },
   ]
 
+  //const initialClickedCharacters = []
   const [characters, setCharacters] = useState(initialCharacters);
-  const [clickedCharacters, setClickedCharacters, clickedCharactersref] = useState([]);
+  const [clickedCharacters, setClickedCharacters] = useState([]);
   const [currentId, setCurrentId, Idref] = useState('');
+  const [score, setScore] = useState(0);
+  const [bestScore, setBestScore] =useState(0);
+  const [gameOver, setGameOver] = useState(false)
 
-  //gonna be renames to play round as i fix the logic
   function playRound(id){
-    //get the character id 
-    setCurrentId(id)
-    //add the character to the clicked array
+    //get the character id
+    setGameOver(false) 
+    setCurrentId(id);
     addClickedCharacter(Idref.current);
-    //
-   //console.log(clickedCharactersref.current)
+    shuffle(characters)
   }
 
-
-
   function addClickedCharacter(id){
-    if(clickedCharactersref.current.length < 1){
-      setClickedCharacters([...clickedCharactersref.current, id])
-      console.log(clickedCharactersref.current)
-
+    if(clickedCharacters.length < 1){
+      setClickedCharacters(prev => [...prev, id])
+      setScore(1)
     }
-    else if(!(clickedCharactersref.current).includes(id)){
-      setClickedCharacters([...clickedCharactersref.current, id]);
-      console.log(clickedCharactersref.current)
+    else if(!(clickedCharacters).includes(id)){
+      setClickedCharacters(prev => [...prev, id])
+      setScore(score + 1)
       }
     else{
-        alert('game over')
+        //alert('game over')
+        setClickedCharacters([]);
+        if(score > bestScore){
+          setBestScore(score);
+          setScore(0)
+        }else{
+          setScore(0);
+        }
+        setGameOver(true)
       }
     }
 
+    function shuffle(array){
+      let currentIndex = array.length, randomIndex;
+
+      while(currentIndex !== 0){
+        randomIndex = Math.floor(Math.random()* currentIndex)
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex], array[currentIndex]
+        ];
+      }
+      return array;
+    }
+  
   return (
     <div className="App">
-     <Header />
-     <CardHolder characters={characters} playRound={playRound}/>
+     <Header score={score} bestScore={bestScore}/>
+     <CardHolder characters={characters} playRound={playRound} />
     </div>
   );
 }
 
 export default App;
+
+
+    //add the character to the clicked array
+   // addClickedCharacter(Idref.current);
