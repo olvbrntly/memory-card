@@ -1,15 +1,14 @@
 import React from "react";
 import PhotoCard from "./PhotoCard";
 
-function CardHolder({characters}){
+function CardHolder({characters, getCharacter}){
     return(
     <div>
         <div className="container">
             {characters.map(c => (
-                <div key={c.id}>
-                     <PhotoCard name={c.name} url={c.imgURL}/>
+                <div key={c.id} onClick={() => {getCharacter(c.name)}}>
+                    <PhotoCard name={c.name} url={c.imgURL}/>   
                 </div>
-               
             ))}
         </div>
     </div>
