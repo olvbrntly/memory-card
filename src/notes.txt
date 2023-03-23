@@ -27,3 +27,40 @@ FIRST 12
 22. Gabe
 23. Clark
 24. Pete
+
+
+for game play
+i need to to figure out how to randomize placement.
+but for game play some psuedo
+first idea
+    when click on a card 
+    get the cards name (not id bc i think thats whats gonna have to change);
+    fins the element with thta name
+    if that elements clicked prop is false 
+        make it true
+    else: 
+        game over
+        current score is compared to best score
+        whichever is larger is saved in best score
+        current score is reset to zero
+        all elements clicked prop is returned to false
+
+Another approach (i think this would be much better, certainly seems easier to implement)
+initialize a clikced array
+when a card is clicked
+    if the clicked array is empty
+        get the name
+        add the name to an array
+    if the array is not empty 
+        check if the name is in the array
+            if it is not in the array 
+                add the name to the array
+                add one to the current score 
+            if the name is in the array
+                current score is compared with best score
+                whichever is larger gets saved in best score
+                current score is reset to 0
+                clicked array is reset to an empty array
+
+        
+
