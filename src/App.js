@@ -91,10 +91,8 @@ function App() {
 
   //gonna be renames to play round as i fix the logic
   function playRound(id){
-    setCurrentId(id)
-    console.log(Idref.current)
     //get the character id 
-   //getCharacterId(id)
+    setCurrentId(id)
     //add the character to the clicked array
     addClickedCharacter(Idref.current);
     //
