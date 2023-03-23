@@ -1,7 +1,7 @@
 
 import './App.css';
-import { useEffect, useState } from 'react';
-
+import { useEffect } from 'react';
+import useState from 'react-usestateref';
 import Header from './components/Header';
 import CardHolder from './components/Cardholder';
 
@@ -86,17 +86,42 @@ function App() {
   ]
 
   const [characters, setCharacters] = useState(initialCharacters);
-  const [clickedCharacters, setClickedCharacters] = useState([]);
-  const [currentName, setCurrentName] = useState('');
+  const [clickedCharacters, setClickedCharacters, clickedCharactersref] = useState([]);
+  const [currentId, setCurrentId, Idref] = useState('');
 
-  function getCharacter(name){
-   setCurrentName(name);
+  //gonna be renames to play round as i fix the logic
+  function playRound(id){
+    setCurrentId(id)
+    console.log(Idref.current)
+    //get the character id 
+   //getCharacterId(id)
+    //add the character to the clicked array
+    addClickedCharacter(Idref.current);
+    //
+   //console.log(clickedCharactersref.current)
   }
+
+
+
+  function addClickedCharacter(id){
+    if(clickedCharactersref.current.length < 1){
+      setClickedCharacters([...clickedCharactersref.current, id])
+      console.log(clickedCharactersref.current)
+
+    }
+    else if(!(clickedCharactersref.current).includes(id)){
+      setClickedCharacters([...clickedCharactersref.current, id]);
+      console.log(clickedCharactersref.current)
+      }
+    else{
+        alert('game over')
+      }
+    }
 
   return (
     <div className="App">
      <Header />
-     <CardHolder characters={characters} getCharacter={getCharacter}/>
+     <CardHolder characters={characters} playRound={playRound}/>
     </div>
   );
 }
