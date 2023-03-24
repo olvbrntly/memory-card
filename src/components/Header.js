@@ -1,5 +1,5 @@
 import React from "react";
-import Modes from './Modes';
+//import Modes from './Modes';
 import ScoreBoard from "./Scoreboard";
 import './components.css'
 
@@ -10,7 +10,7 @@ function Header({score, bestScore }){
             <h1> DUNDER MIFFLIN MEMORY GAME</h1> {/* this will be in the dundermifflin font */}
             <ScoreBoard score={score} bestScore={bestScore}/>
             </div>
-            <Modes/>
+            {/* <Modes/> */}
         </div>
     )
  
