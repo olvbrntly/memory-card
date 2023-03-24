@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/memory-card)/static/css/main.e62ca35e.css",
-    "main.js": "/memory-card)/static/js/main.b5de63d7.js",
-    "static/media/phyllis.png": "/memory-card)/static/media/phyllis.9319597c43e5ba8fdd12.png",
-    "static/media/meredith.png": "/memory-card)/static/media/meredith.22b2fecc16eb89e44b4a.png",
-    "static/media/angela.png": "/memory-card)/static/media/angela.67a2608622afa231af97.png",
-    "static/media/pam.png": "/memory-card)/static/media/pam.316cf9a15f0b15724389.png",
-    "static/media/kevin.png": "/memory-card)/static/media/kevin.b37ed6c083f5c8a45ac3.png",
-    "static/media/stanley.png": "/memory-card)/static/media/stanley.94bfef25ddc4d4a4f4d9.png",
-    "static/media/oscar.png": "/memory-card)/static/media/oscar.062cfb448af210a83bf2.png",
-    "static/media/michael.png": "/memory-card)/static/media/michael.e907c7f79432b3368098.png",
-    "static/media/dwight.png": "/memory-card)/static/media/dwight.cb31a8bd9ffdd329dbd8.png",
-    "static/media/creed.png": "/memory-card)/static/media/creed.b5e0314b284bcc34ab36.png",
-    "static/media/ryan.png": "/memory-card)/static/media/ryan.c543ca148c75cd6a16f6.png",
-    "static/media/jim.png": "/memory-card)/static/media/jim.86c9bc247263c21a41ff.png",
-    "index.html": "/memory-card)/index.html",
-    "main.e62ca35e.css.map": "/memory-card)/static/css/main.e62ca35e.css.map",
-    "main.b5de63d7.js.map": "/memory-card)/static/js/main.b5de63d7.js.map"
+    "main.css": "/memory-card/static/css/main.e62ca35e.css",
+    "main.js": "/memory-card/static/js/main.f2221558.js",
+    "static/media/phyllis.png": "/memory-card/static/media/phyllis.9319597c43e5ba8fdd12.png",
+    "static/media/meredith.png": "/memory-card/static/media/meredith.22b2fecc16eb89e44b4a.png",
+    "static/media/angela.png": "/memory-card/static/media/angela.67a2608622afa231af97.png",
+    "static/media/pam.png": "/memory-card/static/media/pam.316cf9a15f0b15724389.png",
+    "static/media/kevin.png": "/memory-card/static/media/kevin.b37ed6c083f5c8a45ac3.png",
+    "static/media/stanley.png": "/memory-card/static/media/stanley.94bfef25ddc4d4a4f4d9.png",
+    "static/media/oscar.png": "/memory-card/static/media/oscar.062cfb448af210a83bf2.png",
+    "static/media/michael.png": "/memory-card/static/media/michael.e907c7f79432b3368098.png",
+    "static/media/dwight.png": "/memory-card/static/media/dwight.cb31a8bd9ffdd329dbd8.png",
+    "static/media/creed.png": "/memory-card/static/media/creed.b5e0314b284bcc34ab36.png",
+    "static/media/ryan.png": "/memory-card/static/media/ryan.c543ca148c75cd6a16f6.png",
+    "static/media/jim.png": "/memory-card/static/media/jim.86c9bc247263c21a41ff.png",
+    "index.html": "/memory-card/index.html",
+    "main.e62ca35e.css.map": "/memory-card/static/css/main.e62ca35e.css.map",
+    "main.f2221558.js.map": "/memory-card/static/js/main.f2221558.js.map"
   },
   "entrypoints": [
     "static/css/main.e62ca35e.css",
-    "static/js/main.b5de63d7.js"
+    "static/js/main.f2221558.js"
   ]
 }
