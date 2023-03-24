@@ -145,6 +145,7 @@ function App() {
     <div className="App">
      <Header score={score} bestScore={bestScore}/>
      <CardHolder characters={characters} playRound={playRound} />
+     <div className='game-over'>{(gameOver ||  score === 12)? "Game Over!": ""}</div>
     </div>
   );
 }
